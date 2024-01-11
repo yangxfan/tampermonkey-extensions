@@ -22,6 +22,7 @@
  */
 
 (() => {
+  // 添加新的样式规则
   const addStylesheetRules = () => {
     const styleEl = document.createElement('style')
     document.head.appendChild(styleEl)
