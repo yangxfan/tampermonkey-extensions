@@ -7,6 +7,8 @@
 // @match        *://*.zhihu.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=zhihu.com
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/yangxfan/tampermonkey-extensions/main/scripts/zhihu-remove-login.js
+// @downloadURL  https://raw.githubusercontent.com/yangxfan/tampermonkey-extensions/main/scripts/zhihu-remove-login.js
 // ==/UserScript==
 
 /**

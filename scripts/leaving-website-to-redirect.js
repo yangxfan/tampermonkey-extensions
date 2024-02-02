@@ -12,6 +12,8 @@
 // @match        *://www.tianyancha.com/security/*
 // @match        *://link.csdn.net/?target=*
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/yangxfan/tampermonkey-extensions/main/scripts/leaving-website-to-redirect.js
+// @downloadURL  https://raw.githubusercontent.com/yangxfan/tampermonkey-extensions/main/scripts/leaving-website-to-redirect.js
 // ==/UserScript==
 
 /**
