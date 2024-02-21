@@ -23,7 +23,7 @@
     const styleEl = document.createElement('style')
     document.head.appendChild(styleEl)
     const stylesheet = styleEl.sheet
-    stylesheet.insertRule(`#content a:visited {color: #f00;}`, stylesheet.cssRules.length)
+    stylesheet.insertRule(`#content a:visited {color: #f00 !important;}`, stylesheet.cssRules.length)
   }
 
   addStylesheetRules()
