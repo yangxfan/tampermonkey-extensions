@@ -11,7 +11,7 @@
 // @match        *://link.juejin.cn/*
 // @match        *://www.tianyancha.com/security/*
 // @match        *://link.csdn.net/?target=*
-// @match        *://docs.qq.com/scenario/link.html?url=
+// @match        *://docs.qq.com/scenario/link.html?url=*
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/yangxfan/tampermonkey-extensions/main/scripts/leaving-website-to-redirect.js
 // @downloadURL  https://raw.githubusercontent.com/yangxfan/tampermonkey-extensions/main/scripts/leaving-website-to-redirect.js
