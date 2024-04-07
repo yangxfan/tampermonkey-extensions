@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         CSDN去掉登录弹框和文章可复制
 // @namespace    https://github.com/yangxfan/tampermonkey-extensions
-// @version      0.2
-// @description  没有登录，复制内容时，会复制失败和显示登录弹框，去掉登录弹框并可复制；去掉复制内容的版权声明
+// @version      0.3
+// @description  没有登录，复制内容时，会复制失败和显示登录弹框，去掉登录弹框并可复制；去掉复制内容的版权声明；去掉“关注博主即可阅读全文”；
 // @author       yangxfan
 // @match        *://blog.csdn.net/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=csdn.net
@@ -12,6 +12,10 @@
 // ==/UserScript==
 
 /**
+ * 2024-04-07
+ * 0.3
+ * 去掉“关注博主即可阅读全文”
+ *
  * 2024-02-02
  * 0.2
  * 代码块可复制
@@ -21,7 +25,7 @@
  * 首次提交
  */
 
-(($) => {
+($ => {
   // 添加新的样式规则
   const addStylesheetRules = () => {
     const styleEl = document.createElement('style')
@@ -32,6 +36,9 @@
     // 代码块修改为可复制样式
     stylesheet.insertRule(`#content_views pre {user-select: auto;}`, stylesheet.cssRules.length)
     stylesheet.insertRule(`#content_views pre code {user-select: auto;}`, stylesheet.cssRules.length)
+    // 关注博主即可阅读全文的相关元素重置样式
+    stylesheet.insertRule(`#article_content {height: auto !important;overflow: auto !important;}`, stylesheet.cssRules.length)
+    stylesheet.insertRule(`.hide-article-box {display: none !important;}`, stylesheet.cssRules.length)
   }
 
   addStylesheetRules()
